@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://getbootstrap.com/docs/4.0/examples/jumbotron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://s3.amazonaws.com/stitch-sdks/js/library/v3/stable/stitch.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>inSight</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./data/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./data/jumbotron.css" rel="stylesheet">
+	
+	<style>
+      #map {
+        height: 500px;;
+      }
+    </style>
+	</head>
+
+<body onload="">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">inSight</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+  
+    <!-- The Modal -->
+  <div class="modal fade" id="fallModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Fall Alert</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" id="modal-body">
+          This is a test.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+			<div id="map"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Active Devices</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Device Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Latitude</th>
+      <th scope="col">Longitude</th>
+    </tr>
+  </thead>
+  <tbody id="deviceList">
+    <tr>
+      <th>No Devices Online</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	</tbody>
+</table>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>© inSight 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./data/popper.min.js.download"></script>
+    <script src="./data/bootstrap.min.js.download"></script>
+    <script src="./dashDb.js"></script>
+    <script src="./map.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeoWJZl-mxuOcfuqAUWOPRfyw2AUgIQMc&callback=initMap">
+    </script>
+  
+
+</body></html>
