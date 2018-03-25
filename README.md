@@ -1,2 +1,4 @@
 # inSight-Codebase
-Codebased for inSight Demo for Hack-a-bull 2018
+Codebase for inSight Demo for Hack-a-bull 2018
+
+Devpost Url: https://devpost.com/software/insight-rl690g
